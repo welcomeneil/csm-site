@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
 }
 
 p{
@@ -16,7 +18,8 @@ p{
 
 /* --------HEADER AND NAVBAR-------- */
 header{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-color: rgba(207, 43, 43, 0.3);
     font-size: 150%;
 }
 
@@ -39,24 +42,51 @@ nav{
     justify-content: flex-end;
 }
 
+/* styling list */
 nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* styling list elements */
 nav li{
     display: inline-flex;
     justify-content: space-between;
     margin-left: 70px;
     padding-top: 20px;
+
+    position: relative;
 }
 
+/* styling contents of list elements */
 nav a{
     color: #022520;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
+}
+
+/* bolding effect when cursor hovers over element */
+nav a:hover{
+    color: #000;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #022520;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before{
+    width: 100%;
 }
 
 /*  */
