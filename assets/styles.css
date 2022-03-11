@@ -1,0 +1,31 @@
+p{
+    color: #03d4b2;
+    font: 15px Verdana, sans-serif;
+    font-size: larger;
+}
+
+header{
+    background-color: cadetblue;
+    font-size: 150%;
+    text-align: center;
+}
+
+.heading{
+    background-color: beige;
+    color: #9400d4;
+    font: 30px Verdana, sans-serif;
+}
+
+.trailer-video{
+    display: flex;
+    justify-content: center;
+}
+
+.trailer-heading{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+}
