@@ -7,30 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSM</title>
     <link rel="icon" type="PNG" href="media/makima.png"/>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1> This is a website for all thigs Chainsaw Man </h1>
-    </header>
+    <section id="header">
+        <header>
+            <div class="title">
+                <h1> This is a website for all things Chainsaw Man </h1>
+            </div>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#anime" class="active">The Anime</a></li>
+                <li><a href="#manga">The Manga</a></li>
+                <!-- <li><a href="#three">Contact</a></li> -->
+            </ul>
+        </nav>
+    </section>
 
-    <main> 
-        <section> 
-            <h2 class="heading"> The Upcoming Chainsaw Man Anime </h2>
-            <article>
-                <h4> New Chainsaw Man Anime Trailer! </h4>
-                <video src="media/csm-trailer.mp4" width="400" poster="media/power.jpeg" controls loop> Your browser does not support this <code>video</code> element. </video>
-            </article>
-            <article>
+    <main>
+
+        <!-- The Chainsawman Anime -->
+        <section id="anime">
+            <h2 class="anime-heading"> The Upcoming Chainsaw Man Anime </h2>
+            <div class="trailer">
+                <div class="trailer-heading">
+                    <h4> New Chainsaw Man Anime Trailer! </h4>
+                </div>
+                <div class="trailer-video">
+                    <video src="media/csm-trailer.mp4" width="400" poster="media/power.jpeg" controls loop> Your browser does not support this <code>video</code> element. </video>
+                </div>
+            </div>
+            <div class="article">
                 <h4> Check out this article for more news on the anime. </h4>
                 <a href="https://www.hitc.com/en-gb/2021/07/06/chainsaw-man-anime-manga-adaptation-mappa-and-release-date/" target="_blank"> Article </a>
-            </article>
+            </div>
         </section>
 
-        <section>
-            <h2 class="heading"> The Chainsaw Man Manga </h2>
-            <article>
+        <!-- The Chainsawman Manga -->
+        <section id="manga">
+            <h2 class="manga-heading"> The Chainsaw Man Manga </h2>
+            <div class="devil-contracts">
                 <h4> Table of popular characters and their devil contracts </h4>
                 <table border="5">
                     <tr>
@@ -45,8 +63,8 @@
                     <tr>
                         <td> Future Devil </td>
                     </tr>
-                </table>                
-            </article>
+                </table>   
+            </div>
         </section>
     </main>
 
