@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,16 +14,14 @@ p{
     font-size: larger;
 }
 
-.container{
+/* --------HEADER AND NAVBAR-------- */
+#navbar{
     width: 80%;
     margin: 0 auto;
 }
 
-
-/* --------HEADER AND NAVBAR-------- */
 header{
-    /* background-color: cadetblue; */
-    background-color: rgba(207, 43, 43, 0.3);
+    background-color: #f8bcbc;
     font-size: 150%;
 }
 
@@ -54,7 +56,7 @@ nav li{
     display: inline-flex;
     justify-content: space-between;
     margin-left: 70px;
-    padding-top: 20px;
+    padding-top: 29px;
 
     position: relative;
 }
@@ -72,6 +74,7 @@ nav a:hover{
     color: #000;
 }
 
+/* bar effect when cursor hovers over element */
 nav a::before{
     content: '';
     display: block;
@@ -88,6 +91,32 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
+
+/* makes the navbar sticky */
+#header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+/* --------LANDING PAGE-------- */
+
+#landing{
+    background-image:url('../media/csm_wallpaper.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0.4;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 
 /*  */
 .trailer-video{
