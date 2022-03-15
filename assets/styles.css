@@ -6,6 +6,7 @@ body{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
+    background-color: #fdf6f6;
 }
 
 p{
@@ -56,7 +57,7 @@ nav li{
     display: inline-flex;
     justify-content: space-between;
     margin-left: 70px;
-    padding-top: 20px;
+    padding-top: 3vh;
 
     position: relative;
 }
@@ -104,7 +105,7 @@ nav a:hover::before{
 
 /* --------LANDING PAGE-------- */
 
-#landing{
+#landing-page{
     position: relative; 
     height: 100vh;
     width: 100%;
@@ -113,7 +114,7 @@ nav a:hover::before{
     justify-content: center;
 }
 
-#landing::before{    
+#landing-page::before{    
     content: "";
     background-image:url('../media/csm_wallpaper.jpeg');
     background-size: cover;
@@ -126,13 +127,13 @@ nav a:hover::before{
 }
 
 h1{
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 75px;
-  font-weight: 300;
-  text-align: center;
-  color: #5e1d1d;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 300;
+    text-align: center;
+    color: #5e1d1d;
 }
 
 /* --------Anime-------- */
@@ -140,6 +141,50 @@ h1{
 #anime{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+#anime-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#trailer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(106, 107, 106);
+    text-align: center;
+    flex: 1;
+}
+
+#trailer video{
+    margin-left: 25%;
+}
+
+#trailer h3{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    color: #03d4b2;
+}
+
+#article{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 71, 4);
+    text-align: center;
+    flex: 1;
+}
+
+#article h3{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    color: #03d4b2;
 }
 
 /* .trailer-video{
