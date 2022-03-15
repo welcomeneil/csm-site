@@ -56,7 +56,7 @@ nav li{
     display: inline-flex;
     justify-content: space-between;
     margin-left: 70px;
-    padding-top: 29px;
+    padding-top: 20px;
 
     position: relative;
 }
@@ -79,7 +79,7 @@ nav a::before{
     content: '';
     display: block;
     height: 5px;
-    background-color: #022520;
+    background-color: #000000;
     
     position: absolute;
     top: 0;
@@ -105,21 +105,44 @@ nav a:hover::before{
 /* --------LANDING PAGE-------- */
 
 #landing{
-    background-image:url('../media/csm_wallpaper.jpeg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; 
     height: 100vh;
-    opacity: 0.4;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#landing::before{    
+    content: "";
+    background-image:url('../media/csm_wallpaper.jpeg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
 
-/*  */
-.trailer-video{
+h1{
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-weight: 300;
+  text-align: center;
+  color: #5e1d1d;
+}
+
+/* --------Anime-------- */
+
+#anime{
+    display: flex;
+    justify-content: center;
+}
+
+/* .trailer-video{
     display: flex;
     justify-content: center;
 }
@@ -131,4 +154,4 @@ nav a:hover::before{
 
 footer{
     text-align: center;
-}
+} */
